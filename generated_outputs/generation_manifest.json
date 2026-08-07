@@ -1,0 +1,26 @@
+{
+  "tables": [
+    "table_3_test_set_performance",
+    "table_4_false_negative_tradeoff",
+    "table_5_incremental_interaction_effect",
+    "table_6_criterion_summary",
+    "table_7_mcnemar_positive_cases",
+    "table_8_operating_point_summary",
+    "table_9_metric_change_summary",
+    "table_10_cross_study_comparison"
+  ],
+  "figures": [
+    "figure_2_false_negative_reduction",
+    "figure_3_fn_fp_tradeoff",
+    "figure_4_performance_trends",
+    "figure_5_confusion_matrix_comparison"
+  ],
+  "internal_table_source": "results/metrics_full_precision.csv, results/comparison_vs_baseline_full_precision.csv, and results/mcnemar_results_full_precision.csv",
+  "external_table_10_source": "reference_inputs/published_gbc_reference.csv",
+  "rounding": {
+    "performance_metrics_and_deltas": "four decimal places",
+    "relative_FN_and_percentage_point_differences": "two decimal places",
+    "calculation_policy": "all differences calculated from unrounded inputs before presentation rounding"
+  },
+  "figure_1": "Conceptual framework diagram; separate editable source"
+}

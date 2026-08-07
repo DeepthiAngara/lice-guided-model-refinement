@@ -1,0 +1,6 @@
+| Model | Recall Difference (pp) | Precision Difference (pp) | F1 Difference (pp) | AUC Difference (pp) | MCC Difference (pp) |
+| --- | --- | --- | --- | --- | --- |
+| Jose et al. GBC | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| Baseline | 0.55 | 1.06 | 0.82 | 0.01 | 0.47 |
+| LICE-BalancedGBDT | 2.98 | 0.17 | 1.44 | -0.02 | 0.92 |
+| LICE-HighSensitivityGBDT | 3.32 | -0.22 | 1.36 | -0.10 | 0.57 |

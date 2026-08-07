@@ -1,0 +1,7 @@
+Criterion,Best Variant,Value
+Lowest FN / Highest FN Reduction,M3-High: LICE-Interaction + LICE-weighting,1221 FN
+Highest Recall,M3-High: LICE-Interaction + LICE-weighting,0.8278
+Highest F1-Score,M3-Balanced: LICE-Interaction + LICE-weighting,0.7770
+Highest MCC,M3-Balanced: LICE-Interaction + LICE-weighting,0.5163
+Highest AUC,M1: LICE-derived interaction-only model,0.8317
+Highest Precision,M1: LICE-derived interaction-only model,0.7442

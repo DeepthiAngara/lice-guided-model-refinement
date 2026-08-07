@@ -1,0 +1,12 @@
+{
+  "prepared_dataset": {
+    "path": "data/diabetes_brfss2015_prepared.csv",
+    "sha256": "cea4e25cd6304a5f35f5f71cd1b374bef9613ecb9e1ff2a9b2056c7a3d8b7cc8",
+    "bytes": 6180495
+  },
+  "sample_weights": {
+    "path": "input_artifacts/lice_sample_weights.csv.gz",
+    "sha256": "812aa92982d1c1264efd82b821eb9e7baf9d35e900517cc674ad83e504d5d607",
+    "bytes": 313200
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "source_release_tag": "v1.1.0",
+  "planned_release_tag": "v1.2.0",
+  "purpose": "Prediction-level audit and independent reproduction of manuscript Tables 3-10 from released case-level predictions.",
+  "test_set_semantics": {
+    "outer_split": "test",
+    "oof_validation_fold": "not applicable to the untouched test set",
+    "evaluation_sample_weight": 1.0,
+    "decision_threshold": 0.5
+  },
+  "row_counts": {
+    "test_instances": 13812,
+    "model_variants": 8,
+    "long_prediction_rows": 110496,
+    "training_audit_rows": 55245
+  },
+  "tolerances": {
+    "integer_counts": "exact",
+    "full_precision_metrics_absolute": 1e-12,
+    "four_decimal_presentation_half_unit": 5e-05,
+    "two_decimal_percentage_point_half_unit": 0.005,
+    "formatted_table_comparison": "exact after declared rounding"
+  },
+  "lice_patterns": {
+    "FN_P1": "GenHlth <= 2",
+    "FN_P2": "HighBP <= 0",
+    "FN_P3": "HighChol <= 0",
+    "FN_P4": "BMI <= 25",
+    "target_region": "y_true = 1 and at least two patterns match"
+  },
+  "artifacts": {
+    "test_predictions_long": {
+      "file": "results/test_predictions_long.csv.gz",
+      "sha256": "2d70224cca0b8dcd2f808b7db206f5903e347afaeed78251547d03a551df5acf",
+      "rows": 110496,
+      "columns": [
+        "Source_Row_Index",
+        "Outer_Split",
+        "Test_Position",
+        "OOF_Validation_Fold",
+        "Fold_Assignment_Status",
+        "Model",
+        "y_true",
+        "Predicted_Probability",
+        "Predicted_Class",
+        "Decision_Threshold",
+        "Evaluation_Sample_Weight",
+        "Training_Weight_Scheme",
+        "Uses_LICE_Interactions",
+        "Uses_LICE_Sample_Weighting",
+        "GenHlth",
+        "HighBP",
+        "HighChol",
+        "BMI",
+        "Match_FN_P1_GenHlth_le_2",
+        "Match_FN_P2_HighBP_le_0",
+        "Match_FN_P3_HighChol_le_0",
+        "Match_FN_P4_BMI_le_25",
+        "LICE_Pattern_Match_Count",
+        "Matches_At_Least_Two_LICE_Patterns",
+        "LICE_Targeted_Positive_Region",
+        "Error_Type",
+        "Baseline_Predicted_Class",
+        "FN_Transition_vs_Baseline",
+        "McNemar_Category_vs_Baseline"
+      ]
+    },
+    "training_lice_assignment_audit": {
+      "file": "results/training_lice_assignment_audit.csv.gz",
+      "sha256": "c6dc142b76b40e60a28ab8953df0d56da2b92935f9ac75f72aac2a96e0e54eae",
+      "rows": 55245,
+      "columns": [
+        "Source_Row_Index",
+        "Outer_Split",
+        "Train_Position",
+        "OOF_Validation_Fold",
+        "y_true",
+        "GenHlth",
+        "HighBP",
+        "HighChol",
+        "BMI",
+        "Match_FN_P1",
+        "Match_FN_P2",
+        "Match_FN_P3",
+        "Match_FN_P4",
+        "Pattern_Match_Count",
+        "LICE_Targeted_Positive",
+        "Mild_Sample_Weight",
+        "Balanced_Sample_Weight",
+        "High_Sensitivity_Sample_Weight"
+      ]
+    },
+    "fn_transition_summary": {
+      "file": "results/fn_transition_summary_from_predictions.csv",
+      "sha256": "6afb2beb5efccda558ba2a6b23bf8ec0919fb83fdade6bdac99b6745ea3fe2cd",
+      "rows": 7
+    },
+    "reproduction_checks": {
+      "file": "results/prediction_reproduction_checks.csv",
+      "sha256": "6202e4c2c8cd169900e57f9b790f13af26d2237277eab6d0e07c5776a2f1cd31",
+      "checks": 68,
+      "passed": 68,
+      "failed": 0
+    }
+  },
+  "all_checks_passed": true
+}

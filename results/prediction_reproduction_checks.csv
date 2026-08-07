@@ -1,0 +1,69 @@
+Check_ID,Scope,Observed,Expected,Tolerance,Status
+input_exists_diabetes_brfss2015_prepared.csv,Input availability,True,True,exact,PASS
+input_exists_split_assignments.csv.gz,Input availability,True,True,exact,PASS
+input_exists_lice_sample_weights.csv.gz,Input availability,True,True,exact,PASS
+input_exists_pattern_match_trace.csv.gz,Input availability,True,True,exact,PASS
+input_exists_predictions_all_models.csv.gz,Input availability,True,True,exact,PASS
+input_exists_metrics_full_precision.csv,Input availability,True,True,exact,PASS
+input_exists_mcnemar_results_full_precision.csv,Input availability,True,True,exact,PASS
+input_exists_published_gbc_reference.csv,Input availability,True,True,exact,PASS
+prediction_schema,Released wide prediction file,18,18,exact required-column inclusion,PASS
+prediction_row_count,Released wide prediction file,13812,13812,exact,PASS
+prediction_unique_source_rows,Released wide prediction file,13812,13812,exact,PASS
+test_split_row_count,Split assignment,13812,13812,exact,PASS
+test_fold_not_applicable,Untouched test-set semantics,0,0,exact,PASS
+prediction_split_join,Prediction-to-split linkage,13812,13812,exact,PASS
+prediction_true_label_linkage,Prediction-to-dataset linkage,linked labels,dataset Outcome,exact,PASS
+threshold_baseline,Baseline,0,0,exact at threshold 0.50,PASS
+probability_range_baseline,Baseline,"[0.0078679635403115476, 0.96045555719225517]","[0, 1]",inclusive,PASS
+threshold_m1_interactions,M1-Interactions,0,0,exact at threshold 0.50,PASS
+probability_range_m1_interactions,M1-Interactions,"[0.008240471910369843, 0.96044801523019663]","[0, 1]",inclusive,PASS
+threshold_m2_mild,M2-Mild,0,0,exact at threshold 0.50,PASS
+probability_range_m2_mild,M2-Mild,"[0.0081464872277592967, 0.94800229894753574]","[0, 1]",inclusive,PASS
+threshold_m2_balanced,M2-Balanced,0,0,exact at threshold 0.50,PASS
+probability_range_m2_balanced,M2-Balanced,"[0.0077143657602274009, 0.95211661633945166]","[0, 1]",inclusive,PASS
+threshold_m2_high,M2-High,0,0,exact at threshold 0.50,PASS
+probability_range_m2_high,M2-High,"[0.0068186500782662684, 0.95138134020952392]","[0, 1]",inclusive,PASS
+threshold_m3_mild,M3-Mild,0,0,exact at threshold 0.50,PASS
+probability_range_m3_mild,M3-Mild,"[0.0077816456964041533, 0.96720664571188231]","[0, 1]",inclusive,PASS
+threshold_m3_balanced,M3-Balanced,0,0,exact at threshold 0.50,PASS
+probability_range_m3_balanced,M3-Balanced,"[0.0076087843686531769, 0.96414490350337023]","[0, 1]",inclusive,PASS
+threshold_m3_high,M3-High,0,0,exact at threshold 0.50,PASS
+probability_range_m3_high,M3-High,"[0.0092253108504032674, 0.98298963818025586]","[0, 1]",inclusive,PASS
+long_prediction_row_count,Long-format prediction audit,110496,110496,exact,PASS
+long_prediction_unique_key,Long-format prediction audit,0,0,exact,PASS
+test_evaluation_weights,Untouched test-set semantics,[1.0],[1.0],exact,PASS
+training_audit_row_count,Training LICE assignment audit,55245,55245,exact,PASS
+training_audit_label_linkage,Training LICE assignment audit,linked labels,dataset Outcome,exact,PASS
+training_Match_FN_P1,Training LICE pattern linkage,0,0,exact,PASS
+training_Match_FN_P2,Training LICE pattern linkage,0,0,exact,PASS
+training_Match_FN_P3,Training LICE pattern linkage,0,0,exact,PASS
+training_Match_FN_P4,Training LICE pattern linkage,0,0,exact,PASS
+confusion_matrix_Baseline,Baseline,"{'TN': 4767, 'FP': 1956, 'FN': 1417, 'TP': 5672}","{'TN': 4767, 'FP': 1956, 'FN': 1417, 'TP': 5672}",exact,PASS
+full_precision_metrics_Baseline,Baseline,max_abs_difference=0,max_abs_difference<=1e-12,absolute tolerance 1e-12,PASS
+confusion_matrix_M1-Interactions,M1-Interactions,"{'TN': 4765, 'FP': 1958, 'FN': 1393, 'TP': 5696}","{'TN': 4765, 'FP': 1958, 'FN': 1393, 'TP': 5696}",exact,PASS
+full_precision_metrics_M1-Interactions,M1-Interactions,max_abs_difference=0,max_abs_difference<=1e-12,absolute tolerance 1e-12,PASS
+confusion_matrix_M2-Mild,M2-Mild,"{'TN': 4666, 'FP': 2057, 'FN': 1326, 'TP': 5763}","{'TN': 4666, 'FP': 2057, 'FN': 1326, 'TP': 5763}",exact,PASS
+full_precision_metrics_M2-Mild,M2-Mild,max_abs_difference=0,max_abs_difference<=1e-12,absolute tolerance 1e-12,PASS
+confusion_matrix_M2-Balanced,M2-Balanced,"{'TN': 4621, 'FP': 2102, 'FN': 1265, 'TP': 5824}","{'TN': 4621, 'FP': 2102, 'FN': 1265, 'TP': 5824}",exact,PASS
+full_precision_metrics_M2-Balanced,M2-Balanced,max_abs_difference=0,max_abs_difference<=1e-12,absolute tolerance 1e-12,PASS
+confusion_matrix_M2-High,M2-High,"{'TN': 4567, 'FP': 2156, 'FN': 1240, 'TP': 5849}","{'TN': 4567, 'FP': 2156, 'FN': 1240, 'TP': 5849}",exact,PASS
+full_precision_metrics_M2-High,M2-High,max_abs_difference=0,max_abs_difference<=1e-12,absolute tolerance 1e-12,PASS
+confusion_matrix_M3-Mild,M3-Mild,"{'TN': 4677, 'FP': 2046, 'FN': 1312, 'TP': 5777}","{'TN': 4677, 'FP': 2046, 'FN': 1312, 'TP': 5777}",exact,PASS
+full_precision_metrics_M3-Mild,M3-Mild,max_abs_difference=0,max_abs_difference<=1e-12,absolute tolerance 1e-12,PASS
+confusion_matrix_M3-Balanced,M3-Balanced,"{'TN': 4613, 'FP': 2110, 'FN': 1245, 'TP': 5844}","{'TN': 4613, 'FP': 2110, 'FN': 1245, 'TP': 5844}",exact,PASS
+full_precision_metrics_M3-Balanced,M3-Balanced,max_abs_difference=0,max_abs_difference<=1e-12,absolute tolerance 1e-12,PASS
+confusion_matrix_M3-High,M3-High,"{'TN': 4561, 'FP': 2162, 'FN': 1221, 'TP': 5868}","{'TN': 4561, 'FP': 2162, 'FN': 1221, 'TP': 5868}",exact,PASS
+full_precision_metrics_M3-High,M3-High,max_abs_difference=0,max_abs_difference<=1e-12,absolute tolerance 1e-12,PASS
+mcnemar_full_test_set_baseline_vs_m3-balanced,Full test set: Baseline vs M3-Balanced,counts_match=True; max_abs_difference=0,released McNemar result,counts exact; numeric absolute tolerance 1e-12,PASS
+mcnemar_actual_positive_cases_only_baseline_vs_m3-balanced,Actual positive cases only: Baseline vs M3-Balanced,counts_match=True; max_abs_difference=0,released McNemar result,counts exact; numeric absolute tolerance 1e-12,PASS
+mcnemar_full_test_set_baseline_vs_m3-high,Full test set: Baseline vs M3-High,counts_match=True; max_abs_difference=0,released McNemar result,counts exact; numeric absolute tolerance 1e-12,PASS
+mcnemar_actual_positive_cases_only_baseline_vs_m3-high,Actual positive cases only: Baseline vs M3-High,counts_match=True; max_abs_difference=0,released McNemar result,counts exact; numeric absolute tolerance 1e-12,PASS
+table_3_reproduction,Table 3,exact formatted match,exact formatted match,four-decimal tolerance 0.00005; two-decimal pp tolerance 0.005,PASS
+table_4_reproduction,Table 4,exact formatted match,exact formatted match,four-decimal tolerance 0.00005; two-decimal pp tolerance 0.005,PASS
+table_5_reproduction,Table 5,exact formatted match,exact formatted match,four-decimal tolerance 0.00005; two-decimal pp tolerance 0.005,PASS
+table_6_reproduction,Table 6,exact formatted match,exact formatted match,four-decimal tolerance 0.00005; two-decimal pp tolerance 0.005,PASS
+table_7_reproduction,Table 7,exact formatted match,exact formatted match,four-decimal tolerance 0.00005; two-decimal pp tolerance 0.005,PASS
+table_8_reproduction,Table 8,exact formatted match,exact formatted match,four-decimal tolerance 0.00005; two-decimal pp tolerance 0.005,PASS
+table_9_reproduction,Table 9,exact formatted match,exact formatted match,four-decimal tolerance 0.00005; two-decimal pp tolerance 0.005,PASS
+table_10_reproduction,Table 10,exact formatted match,exact formatted match,four-decimal tolerance 0.00005; two-decimal pp tolerance 0.005,PASS
