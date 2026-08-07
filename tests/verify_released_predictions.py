@@ -1066,7 +1066,7 @@ check_report.to_csv(check_report_path, index=False)
 all_checks_passed = check_report["Status"].eq("PASS").all()
 
 manifest = {
-    "release_tag": "v1.2.0"
+    "release_tag": "v1.2.0",
     "purpose": (
         "Prediction-level audit and independent reproduction of manuscript "
         "Tables 3-10 from released case-level predictions."
