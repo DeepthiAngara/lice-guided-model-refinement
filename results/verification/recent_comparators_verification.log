@@ -1,0 +1,17 @@
+        Model   TN   FP   FN   TP  Accuracy      AUC   Recall  Precision       F1    Kappa      MCC    Brier
+     Baseline 4767 1956 1417 5672  0.755792 0.830959 0.800113   0.743576 0.770809 0.510227 0.511797 0.166194
+  M3-Balanced 4613 2110 1245 5844  0.757095 0.830749 0.824376   0.734725 0.776973 0.512229 0.516328 0.166311
+      M3-High 4561 2162 1221 5868  0.755068 0.829944 0.827761   0.730760 0.776242 0.508014 0.512839 0.166811
+Jose-LightGBM 4761 1962 1432 5657  0.754272 0.830698 0.797997   0.742486 0.769241 0.507195 0.508704 0.166297
+    Pang-MARS 4807 1916 1473 5616  0.754634 0.828220 0.792213   0.745619 0.768210 0.508086 0.509139 0.167380
+
+                   Comparison  Reference_Correct_Comparator_Wrong  Reference_Wrong_Comparator_Correct  Discordant_Total  Exact_Two_Sided_P_Value  Holm_Adjusted_P_Value  Significant_After_Holm_0.05
+   Jose-LightGBM vs Baseline                                 166                                 145               311                 0.256718               1.000000                        False
+Jose-LightGBM vs M3-Balanced                                 281                                 242               523                 0.096495               0.578968                        False
+    Jose-LightGBM vs M3-High                                 314                                 303               617                 0.687287               1.000000                        False
+       Pang-MARS vs Baseline                                 340                                 324               664                 0.560523               1.000000                        False
+    Pang-MARS vs M3-Balanced                                 381                                 347               728                 0.221280               1.000000                        False
+        Pang-MARS vs M3-High                                 422                                 416               838                 0.862883               1.000000                        False
+
+ {'checks': 17, 'passed': 17, 'failed': 0}
+VERIFICATION_SUMMARY {"checks": 17, "passed": 17, "failed": 0}

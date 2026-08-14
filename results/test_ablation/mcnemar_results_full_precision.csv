@@ -1,0 +1,5 @@
+Scope,Comparison,Both_Correct,Baseline_Correct_Candidate_Wrong,Baseline_Wrong_Candidate_Correct,Both_Wrong,McNemar_Statistic,p_value,Significant_at_0.05,Direction
+Full test set,Baseline vs M3-Balanced,10194,245,263,3110,0.56889763779527558,0.45069729853781426,False,Candidate corrected more baseline errors than it introduced
+Actual positive cases only,Baseline vs M3-Balanced,5632,40,212,1205,116.03571428571429,4.6681376401364692e-27,True,Candidate corrected more baseline errors than it introduced
+Full test set,Baseline vs M3-High,10125,314,304,3069,0.13106796116504854,0.7173273000417576,False,Candidate introduced more errors than it corrected
+Actual positive cases only,Baseline vs M3-High,5620,52,248,1169,126.75,2.1071332011685883e-29,True,Candidate corrected more baseline errors than it introduced

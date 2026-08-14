@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "verification_passed": 19,
+  "verification_failed": 0,
+  "models": [
+    "Pang-MARS",
+    "Jose-LightGBM"
+  ],
+  "threshold": 0.5,
+  "test_used_for_tuning": false,
+  "interpretation": "same-dataset, same-split head-to-head implementation of representative recent methods",
+  "not_exact_paper_replication": true
+}

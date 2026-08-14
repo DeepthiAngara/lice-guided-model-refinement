@@ -1,0 +1,18 @@
+Check,Observed,Expected,Status
+Baseline source-row linkage,0,0,PASS
+Baseline label linkage,0,0,PASS
+Baseline threshold agreement,0,0,PASS
+M3-Balanced source-row linkage,0,0,PASS
+M3-Balanced label linkage,0,0,PASS
+M3-Balanced threshold agreement,0,0,PASS
+M3-High source-row linkage,0,0,PASS
+M3-High label linkage,0,0,PASS
+M3-High threshold agreement,0,0,PASS
+Jose-LightGBM source-row linkage,0,0,PASS
+Jose-LightGBM label linkage,0,0,PASS
+Jose-LightGBM threshold agreement,0,0,PASS
+Pang-MARS source-row linkage,0,0,PASS
+Pang-MARS label linkage,0,0,PASS
+Pang-MARS threshold agreement,0,0,PASS
+Jose-LightGBM reported metric reproduction,5.551115123125783e-17,<=1e-12,PASS
+Pang-MARS reported metric reproduction,8.326672684688674e-17,<=1e-12,PASS

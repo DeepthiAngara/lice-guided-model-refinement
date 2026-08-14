@@ -1,0 +1,23 @@
+{
+  "dataset_source": "alexteboul/diabetes-health-indicators-dataset",
+  "source_filename": "diabetes_binary_5050split_health_indicators_BRFSS2015.csv",
+  "prepared_file": "data/diabetes_brfss2015_prepared.csv",
+  "prepared_sha256": "cea4e25cd6304a5f35f5f71cd1b374bef9613ecb9e1ff2a9b2056c7a3d8b7cc8",
+  "prepared_shape": [
+    69057,
+    22
+  ],
+  "random_seed": 42,
+  "test_size": 0.2,
+  "outer_split_stratified": false,
+  "oof_folds": 3,
+  "oof_shuffle": false,
+  "decision_threshold": 0.5,
+  "package_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.5.2",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.4"
+  }
+}

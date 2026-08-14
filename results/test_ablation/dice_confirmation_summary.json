@@ -1,0 +1,24 @@
+{
+  "cases_with_two_or_more_feature_changes": 5026,
+  "dice_confirmed_features": [
+    "BMI",
+    "GenHlth",
+    "HighBP",
+    "HighChol"
+  ],
+  "feature_confirmation_minimum_all_fn_percentage": 30.0,
+  "lime_selected_features": [
+    "GenHlth",
+    "HighBP",
+    "HighChol",
+    "BMI"
+  ],
+  "minimum_successful_cases_with_two_changes_percentage": 50.0,
+  "no_counterfactual_cases": 33,
+  "percentage_all_fn_cases_with_two_or_more_changes": 88.2063882063882,
+  "percentage_successful_cases_with_two_or_more_changes": 88.72021182700794,
+  "retain_existing_weight_rule": true,
+  "same_feature_set": true,
+  "successful_false_negative_cases": 5665,
+  "total_oof_false_negative_cases": 5698
+}

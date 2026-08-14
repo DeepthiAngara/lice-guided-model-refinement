@@ -1,0 +1,29 @@
+{
+  "artifact_ids": [
+    "calibration_assessment",
+    "prevalence_scenario_assessment"
+  ],
+  "data": "existing 13,812-row untouched test partition from the 69,057-row duplicate-removed modelling dataset",
+  "calibration": {
+    "measures": [
+      "Brier score",
+      "log loss",
+      "calibration intercept",
+      "calibration slope",
+      "10-quantile-bin ECE"
+    ],
+    "limitation": "Calibration is assessed on a nearly balanced test partition."
+  },
+  "prevalence_scenarios": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "scenario_method": "PPV, NPV and expected counts per 1,000 derived mathematically from observed test sensitivity and specificity",
+  "interpretation_boundary": "Hypothetical transport scenarios, not validation in prevalence-preserving or clinical cohorts.",
+  "new_dataset_used": false,
+  "clinical_recommendation": false
+}

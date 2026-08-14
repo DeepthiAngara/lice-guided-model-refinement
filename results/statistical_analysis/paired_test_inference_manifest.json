@@ -1,0 +1,26 @@
+{
+  "artifact_ids": [
+    "paired_bootstrap_intervals",
+    "mcnemar_paired_comparisons",
+    "multiplicity_adjusted_inference"
+  ],
+  "test_rows": 13812,
+  "comparisons": 7,
+  "threshold": 0.5,
+  "bootstrap": {
+    "unit": "test instance",
+    "pairing": "identical sampled row indices for baseline and candidate",
+    "resamples": 5000,
+    "seed": 20260812,
+    "interval": "95% percentile"
+  },
+  "mcnemar": {
+    "test": "exact two-sided binomial McNemar",
+    "scopes": [
+      "Full test set",
+      "Actual positive cases only"
+    ],
+    "multiplicity": "Holm adjustment across seven comparisons separately within each scope"
+  },
+  "interpretation_boundary": "Uncertainty analysis does not correct the non-nested configuration-comparison design."
+}

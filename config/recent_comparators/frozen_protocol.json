@@ -1,0 +1,26 @@
+{
+  "artifact_id": "recent_same_split_comparator_protocol",
+  "purpose": "Same-split comparison of recent representative approaches",
+  "comparators": {
+    "Pang_2025": "MARS using R earth; degree 1 and degree 2 included in search",
+    "Jose_2024": "LightGBM using Python lightgbm.LGBMClassifier"
+  },
+  "interpretation": "representative method reimplementation, not exact paper replication",
+  "dataset_rows": 69057,
+  "training_rows": 55245,
+  "test_rows": 13812,
+  "feature_count": 21,
+  "folds": 3,
+  "selection_metric": "Mean_OOF_AUC",
+  "tie_breakers": [
+    "Mean_OOF_F1",
+    "Mean_OOF_Recall",
+    "Configuration_ID"
+  ],
+  "candidate_configurations_per_method": 20,
+  "test_threshold": 0.5,
+  "seed": 42,
+  "data_sha256": "cea4e25cd6304a5f35f5f71cd1b374bef9613ecb9e1ff2a9b2056c7a3d8b7cc8",
+  "split_sha256": "1bca2429fa341485b1048cb85ad3fa101d1bdb3028d53cd9d88a963c0453725c",
+  "test_used_for_tuning": false
+}

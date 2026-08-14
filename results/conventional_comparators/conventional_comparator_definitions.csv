@@ -1,0 +1,17 @@
+Model,Target_Rule,Random_Seed,Weighted_Rows,Weighted_Positive_Rows,Weighted_Negative_Rows,Minimum_Weight,Maximum_Weight,Mean_Weight
+GlobalPositive-Mild,all positive training rows,,28008,28008,0,1.0,1.15,1.0760467010589194
+RawOOFFN-Mild,baseline OOF false-negative rows,,5698,5698,0,1.0,1.15,1.0154710833559597
+GlobalPositive-Balanced,all positive training rows,,28008,28008,0,1.0,1.25,1.1267445017648656
+RawOOFFN-Balanced,baseline OOF false-negative rows,,5698,5698,0,1.0,1.25,1.0257851389265997
+GlobalPositive-High,all positive training rows,,28008,28008,0,1.0,1.35,1.1774423024708118
+RawOOFFN-High,baseline OOF false-negative rows,,5698,5698,0,1.0,1.35,1.0360991944972398
+RandomTarget-Balanced-seed101,random positive training rows,101.0,7174,7174,0,1.0,1.25,1.0324644764232058
+RandomTarget-Balanced-seed211,random positive training rows,211.0,7174,7174,0,1.0,1.25,1.0324644764232058
+RandomTarget-Balanced-seed307,random positive training rows,307.0,7174,7174,0,1.0,1.25,1.0324644764232058
+RandomTarget-Balanced-seed401,random positive training rows,401.0,7174,7174,0,1.0,1.25,1.0324644764232058
+RandomTarget-Balanced-seed503,random positive training rows,503.0,7174,7174,0,1.0,1.25,1.0324644764232058
+RandomTarget-Balanced-seed601,random positive training rows,601.0,7174,7174,0,1.0,1.25,1.0324644764232058
+RandomTarget-Balanced-seed701,random positive training rows,701.0,7174,7174,0,1.0,1.25,1.0324644764232058
+RandomTarget-Balanced-seed809,random positive training rows,809.0,7174,7174,0,1.0,1.25,1.0324644764232058
+RandomTarget-Balanced-seed907,random positive training rows,907.0,7174,7174,0,1.0,1.25,1.0324644764232058
+RandomTarget-Balanced-seed1009,random positive training rows,1009.0,7174,7174,0,1.0,1.25,1.0324644764232058

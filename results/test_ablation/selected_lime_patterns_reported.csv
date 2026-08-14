@@ -1,0 +1,5 @@
+Pattern_ID,Feature,LIME_Condition,Operator,Threshold,Feature_Category,FN_Case_Coverage_Percentage,Mean_LIME_Weight,FN_Priority_Score
+FN_P1,GenHlth,GenHlth <= 2.00,<=,2,Health-usable,56.528607,-0.220909,12.487678
+FN_P2,HighBP,HighBP <= 0.00,<=,0,Health-usable,61.477711,-0.142702,8.772992
+FN_P3,HighChol,HighChol <= 0.00,<=,0,Health-usable,60.161460,-0.121831,7.329531
+FN_P4,BMI,BMI <= 25.00,<=,25,Health-usable,36.855037,-0.176531,6.506057

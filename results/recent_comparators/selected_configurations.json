@@ -1,0 +1,24 @@
+{
+  "Jose-LightGBM": {
+    "configuration_id": "LGBM_02",
+    "parameters": {
+      "num_leaves": 15,
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 30,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 0.0
+    }
+  },
+  "Pang-MARS": {
+    "configuration_id": "MARS_15",
+    "parameters": {
+      "Configuration_ID": "MARS_15",
+      "degree": 2,
+      "nk": 35,
+      "penalty": 2
+    }
+  }
+}

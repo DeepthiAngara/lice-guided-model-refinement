@@ -1,0 +1,4 @@
+Weight_Version,Identical_To_Previous_LICE_Weight,Length,Weighted_Samples,Mean_Weight,Max_Weight
+Mild,True,55245,7174,1.0148737442302471,1.15
+Balanced,True,55245,7174,1.023254593175853,1.25
+High_Sensitivity,True,55245,7174,1.0316354421214589,1.35

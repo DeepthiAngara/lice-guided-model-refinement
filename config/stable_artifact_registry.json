@@ -1,0 +1,26 @@
+{
+  "version": "1.3.0",
+  "tables": [
+    "test_ablation_performance",
+    "false_negative_false_positive_tradeoff",
+    "incremental_interaction_effect",
+    "criterion_specific_operating_points",
+    "mcnemar_positive_case_comparison",
+    "operating_point_summary",
+    "metric_change_from_baseline",
+    "cross_study_context",
+    "oof_ablation_performance",
+    "conventional_comparator_performance",
+    "recent_same_split_comparator_performance",
+    "paired_bootstrap_intervals",
+    "multiplicity_adjusted_inference",
+    "calibration_assessment",
+    "prevalence_scenario_assessment"
+  ],
+  "figures": [
+    "false_negative_reduction",
+    "false_negative_false_positive_tradeoff",
+    "performance_metric_trends",
+    "confusion_matrix_comparison"
+  ]
+}

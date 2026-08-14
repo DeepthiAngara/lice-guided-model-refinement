@@ -1,0 +1,14 @@
+{
+  "artifact_id": "exploratory_utility_assessment",
+  "method": "standard net-benefit decision-curve calculation",
+  "data": "existing nearly balanced 13,812-row test partition",
+  "thresholds": {
+    "minimum": 0.05,
+    "maximum": 0.5,
+    "increment": 0.01
+  },
+  "classification_threshold_in_original_experiment": 0.5,
+  "used_for_model_selection": false,
+  "clinical_threshold_specification": false,
+  "interpretation_boundary": "Exploratory model-based utility only; no clinical recommendation or validated cost ratio."
+}

@@ -1,0 +1,10 @@
+Item,Value
+Total OOF FN cases,5698
+Successful FN cases with DiCE CFs,5665
+No-counterfactual FN cases,33
+Total CF rows,16987
+Total feature-change rows,67948
+DiCE feature set,"['GenHlth', 'HighBP', 'HighChol', 'BMI']"
+Top DiCE-changed feature,BMI
+Top DiCE feature case coverage percentage,99.3682
+Purpose of next step,"Use LIME-guided DiCE evidence to confirm, update, or retain final LICE sample weights."

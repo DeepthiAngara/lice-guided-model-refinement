@@ -1,0 +1,5 @@
+Scope,Program,Exit_Code,Checks,Status
+core_results,tests/verify_original_results_stable_names.py,0,68,PASS
+extended_analyses,tests/verify_extended_analyses.py,0,42,PASS
+method_audit,tests/verify_method_audit.py,0,22,PASS
+recent_comparators,tests/verify_recent_comparators.py,0,17,PASS

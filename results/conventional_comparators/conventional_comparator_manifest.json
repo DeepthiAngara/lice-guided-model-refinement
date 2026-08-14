@@ -1,0 +1,45 @@
+{
+  "artifact_ids": [
+    "conventional_comparator_performance",
+    "matched_operating_point_comparison"
+  ],
+  "dataset_rows": 69057,
+  "training_rows": 55245,
+  "test_rows": 13812,
+  "original_threshold": 0.5,
+  "model": "GradientBoostingClassifier with the released baseline parameters",
+  "controls": {
+    "global_positive_weighting": {
+      "Mild": 1.15,
+      "Balanced": 1.25,
+      "High": 1.35
+    },
+    "raw_oof_false_negative_weighting": {
+      "Mild": 1.15,
+      "Balanced": 1.25,
+      "High": 1.35
+    },
+    "random_positive_targeting": {
+      "weight": 1.25,
+      "target_count": 7174,
+      "seeds": [
+        101,
+        211,
+        307,
+        401,
+        503,
+        601,
+        701,
+        809,
+        907,
+        1009
+      ]
+    },
+    "threshold": "selected using training-side OOF predictions only and transferred unchanged to test probabilities"
+  },
+  "excluded_controls": {
+    "clinically_specified_interactions": "not claimed because no clinical specification exercise was conducted",
+    "focal_loss": "not included because it is not a native loss of the fixed scikit-learn GradientBoostingClassifier workflow"
+  },
+  "test_guided_training_or_threshold_selection": false
+}

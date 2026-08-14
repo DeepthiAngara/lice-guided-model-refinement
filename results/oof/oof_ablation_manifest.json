@@ -1,0 +1,25 @@
+{
+  "artifact_id": "oof_ablation_performance",
+  "interpretation": "training-side OOF consistency evidence; not nested model selection",
+  "row_counts": {
+    "training_instances": 55245,
+    "configurations": 8,
+    "instance_model_records": 441960
+  },
+  "decision_threshold": 0.5,
+  "folds": 3,
+  "fold_construction": "StratifiedKFold(n_splits=3, shuffle=False)",
+  "nested_assessment": false,
+  "limitation": "Globally derived LICE patterns and weights were reused across configuration OOF folds.",
+  "models": [
+    "Baseline",
+    "M1-Interactions",
+    "M2-Mild",
+    "M2-Balanced",
+    "M2-High",
+    "M3-Mild",
+    "M3-Balanced",
+    "M3-High"
+  ],
+  "all_checks_passed": true
+}

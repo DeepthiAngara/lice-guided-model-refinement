@@ -1,0 +1,46 @@
+                                       Check                                 Observed                   Expected Status
+ Canonical baseline OOF source-row agreement                                        0                          0   PASS
+Canonical baseline OOF probability agreement                                      0.0                    <=1e-15   PASS
+      Canonical baseline OOF class agreement                                        0                          0   PASS
+                          OOF long row count                                   441960                     441960   PASS
+              OOF unique instance-model keys                                        0                          0   PASS
+                     OOF configuration count                                        8                          8   PASS
+                         OOF fixed threshold                                    [0.5]                      [0.5]   PASS
+               OOF threshold-class agreement                                        0                          0   PASS
+               Baseline OOF confusion matrix               (22310, 18856, 8381, 5698) (22310, 18856, 8381, 5698)   PASS
+                         Baseline OOF AUC/F1                                      0.0                    <=1e-12   PASS
+        M1-Interactions OOF confusion matrix               (22360, 18797, 8440, 5648) (22360, 18797, 8440, 5648)   PASS
+                  M1-Interactions OOF AUC/F1                                      0.0                    <=1e-12   PASS
+            M2-Balanced OOF confusion matrix               (22868, 18300, 8937, 5140) (22868, 18300, 8937, 5140)   PASS
+                      M2-Balanced OOF AUC/F1                                      0.0                    <=1e-12   PASS
+                M2-High OOF confusion matrix               (23067, 18098, 9139, 4941) (23067, 18098, 9139, 4941)   PASS
+                          M2-High OOF AUC/F1                                      0.0                    <=1e-12   PASS
+                M2-Mild OOF confusion matrix               (22670, 18495, 8742, 5338) (22670, 18495, 8742, 5338)   PASS
+                          M2-Mild OOF AUC/F1                                      0.0                    <=1e-12   PASS
+            M3-Balanced OOF confusion matrix               (22921, 18214, 9023, 5087) (22921, 18214, 9023, 5087)   PASS
+                      M3-Balanced OOF AUC/F1                                      0.0                    <=1e-12   PASS
+                M3-High OOF confusion matrix               (23098, 18024, 9213, 4910) (23098, 18024, 9213, 4910)   PASS
+                          M3-High OOF AUC/F1                                      0.0                    <=1e-12   PASS
+                M3-Mild OOF confusion matrix               (22704, 18445, 8792, 5304) (22704, 18445, 8792, 5304)   PASS
+                          M3-Mild OOF AUC/F1                                      0.0                    <=1e-12   PASS
+                Paired bootstrap result rows                                       49                         49   PASS
+                  Paired bootstrap resamples                                   [5000]                     [5000]   PASS
+                       Paired bootstrap seed                               [20260812]                 [20260812]   PASS
+          Paired bootstrap ordered intervals                                     True                       True   PASS
+                         McNemar result rows                                       14                         14   PASS
+              McNemar adjusted p-value range             [3.769724613389096e-35, 1.0]                      [0,1]   PASS
+                      Comparator metric rows                                       40                         40   PASS
+                  Comparator prediction rows                                  1381140                    1381140   PASS
+              Weight-control fixed threshold                                    [0.5]                      [0.5]   PASS
+      Comparator probability-class agreement                                        0                          0   PASS
+                 OOF-selected threshold rows                                        4                          4   PASS
+                    Threshold matching error                                 0.000071                   <=0.0001   PASS
+                          Calibration models                                        8                          8   PASS
+                           Brier-score range [0.1657731406028702, 0.1668616166679776]                      [0,1]   PASS
+                    Prevalence-scenario rows                                       48                         48   PASS
+                 Scenario counts sum to 1000                                      0.0                    <=1e-10   PASS
+                    Exploratory utility rows                                      460                        460   PASS
+         Exploratory utility threshold range                              [0.05, 0.5]                [0.05,0.50]   PASS
+
+Verification checks: 42 passed, 0 failed
+VERIFICATION_SUMMARY {"checks": 42, "passed": 42, "failed": 0}

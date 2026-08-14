@@ -1,0 +1,38 @@
+Check,Observed,Expected,Status
+Baseline: row count,55245,55245,PASS
+Baseline: probability row count,55245,55245,PASS
+Baseline: probability range,"[0.0062417779089849953, 0.96013620783822473]","[0, 1]",PASS
+Baseline: fixed 0.50 threshold,0,0,PASS
+M1-Interactions: row count,55245,55245,PASS
+M1-Interactions: probability row count,55245,55245,PASS
+M1-Interactions: probability range,"[0.0061487812719800399, 0.97230676749863776]","[0, 1]",PASS
+M1-Interactions: fixed 0.50 threshold,0,0,PASS
+M2-Mild: row count,55245,55245,PASS
+M2-Mild: probability row count,55245,55245,PASS
+M2-Mild: probability range,"[0.0079142268336615425, 0.97153905106333072]","[0, 1]",PASS
+M2-Mild: fixed 0.50 threshold,0,0,PASS
+M2-Balanced: row count,55245,55245,PASS
+M2-Balanced: probability row count,55245,55245,PASS
+M2-Balanced: probability range,"[0.0079772493268443507, 0.98191353354677824]","[0, 1]",PASS
+M2-Balanced: fixed 0.50 threshold,0,0,PASS
+M2-High: row count,55245,55245,PASS
+M2-High: probability row count,55245,55245,PASS
+M2-High: probability range,"[0.0073233945258664359, 0.96458257750743559]","[0, 1]",PASS
+M2-High: fixed 0.50 threshold,0,0,PASS
+M3-Mild: row count,55245,55245,PASS
+M3-Mild: probability row count,55245,55245,PASS
+M3-Mild: probability range,"[0.0064925162983096724, 0.96888092671797421]","[0, 1]",PASS
+M3-Mild: fixed 0.50 threshold,0,0,PASS
+M3-Balanced: row count,55245,55245,PASS
+M3-Balanced: probability row count,55245,55245,PASS
+M3-Balanced: probability range,"[0.0057347649933428653, 0.97223854017422706]","[0, 1]",PASS
+M3-Balanced: fixed 0.50 threshold,0,0,PASS
+M3-High: row count,55245,55245,PASS
+M3-High: probability row count,55245,55245,PASS
+M3-High: probability range,"[0.0051933387025104479, 0.97211671051238169]","[0, 1]",PASS
+M3-High: fixed 0.50 threshold,0,0,PASS
+long audit row count,441960,441960,PASS
+unique source-row/model pairs,0,0,PASS
+one OOF fold per source-row/model,1,1,PASS
+historical OOF confusion-count agreement,True,True,PASS
+historical OOF metric agreement,5.551115123125783e-17,<=1e-12,PASS

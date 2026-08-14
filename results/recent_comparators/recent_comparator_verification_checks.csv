@@ -1,0 +1,20 @@
+Check,Observed,Expected,Status
+Jose LightGBM OOF row count,55245,55245,PASS
+Jose LightGBM OOF unique source rows,0,0,PASS
+Jose LightGBM OOF probability range,"[0.0037612150688408207, 0.9628201332936751]","[0,1]",PASS
+Jose LightGBM OOF threshold agreement,0,0,PASS
+Jose LightGBM test row count,13812,13812,PASS
+Jose LightGBM test unique source rows,0,0,PASS
+Jose LightGBM test probability range,"[0.005742352081563174, 0.9416276932664759]","[0,1]",PASS
+Jose LightGBM test threshold agreement,0,0,PASS
+Pang MARS OOF row count,55245,55245,PASS
+Pang MARS OOF unique source rows,0,0,PASS
+Pang MARS OOF probability range,"[0.0010815506582353, 0.957470319685527]","[0,1]",PASS
+Pang MARS OOF threshold agreement,0,0,PASS
+Pang MARS test row count,13812,13812,PASS
+Pang MARS test unique source rows,0,0,PASS
+Pang MARS test probability range,"[0.0008550202075152, 0.952132471405568]","[0,1]",PASS
+Pang MARS test threshold agreement,0,0,PASS
+MARS search budget,20,20,PASS
+LightGBM search budget,20,20,PASS
+Performance result rows,4,4,PASS

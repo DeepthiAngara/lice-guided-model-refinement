@@ -1,0 +1,12 @@
+{
+  "programs": 4,
+  "programs_passed": 4,
+  "programs_failed": 0,
+  "component_check_totals": {
+    "core_results": 68,
+    "extended_analyses": 42,
+    "method_audit": 22,
+    "recent_comparators": 17,
+    "total": 149
+  }
+}

@@ -1,0 +1,3 @@
+Metric,Mean,SD,Median,Minimum,Maximum,Level,Interpretation
+LIME Fidelity,0.43710335553820084,0.10469631064899783,0.4369406650829261,0.1765559009748945,0.6542984841280284,Moderate,Indicates how well the local LIME surrogate approximated the model behavior around false-negative cases.
+DiCE Stability (Jaccard),0.6569544999705692,0.21794901048101223,0.6666666666666666,0.0,1.0,Moderate to High,Indicates how consistently the generated DiCE counterfactuals changed the LIME-guided feature set.

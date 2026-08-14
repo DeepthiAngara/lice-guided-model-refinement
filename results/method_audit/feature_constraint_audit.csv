@@ -1,0 +1,5 @@
+Feature,Training_Minimum,Training_Maximum,Counterfactual_Minimum,Counterfactual_Maximum,Rows_Below_Training_Minimum,Rows_Above_Training_Maximum,Unique_Cases_Outside_Training_Range,Constraint_Status
+GenHlth,1.0,5.0,1.0,5.0,0,0,0,PASS
+HighBP,0.0,1.0,0.0,1.0,0,0,0,PASS
+HighChol,0.0,1.0,0.0,1.0,0,0,0,PASS
+BMI,13.0,45.0,13.0,45.1,0,71,71,FAIL

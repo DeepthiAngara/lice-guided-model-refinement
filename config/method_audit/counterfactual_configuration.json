@@ -1,0 +1,86 @@
+{
+    "notebook": "weight_identification_DiCE.ipynb",
+    "purpose": "Generate DiCE counterfactual patterns from OOF false-negative cases and create DiCE-based sample weights.",
+    "primary_error_group": "False Negative",
+    "desired_class_for_dice": 1,
+    "lime_guided_dice_features": [
+        "GenHlth",
+        "HighBP",
+        "HighChol",
+        "BMI"
+    ],
+    "broad_health_usable_dice_features": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "HvyAlcoholConsump",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk"
+    ],
+    "excluded_from_main_dice": [
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+    ],
+    "non_actionable_features": [
+        "Age",
+        "Sex",
+        "Income",
+        "Education"
+    ],
+    "caution_features": [
+        "HeartDiseaseorAttack",
+        "Stroke"
+    ],
+    "health_usable_features": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "BMI",
+        "Smoker",
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "HvyAlcoholConsump",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk"
+    ],
+    "continuous_features_for_dice": [
+        "BMI",
+        "MentHlth",
+        "PhysHlth"
+    ],
+    "categorical_or_ordinal_features_for_dice": [
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "Smoker",
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "HvyAlcoholConsump",
+        "AnyHealthcare",
+        "NoDocbcCost",
+        "GenHlth",
+        "DiffWalk",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+    ],
+    "interpretation_note": "DiCE counterfactuals are used as model-behavior diagnostics. They should not be interpreted as clinical recommendations."
+}

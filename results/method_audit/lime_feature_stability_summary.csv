@@ -1,0 +1,11 @@
+Feature,Folds_Observed,Minimum_Unique_Cases_Across_Folds,Maximum_Unique_Cases_Across_Folds,Mean_Absolute_LIME_Weight_Across_Folds,Dominant_Direction_Agreement_Across_Folds,Fold_Dominant_Directions
+GenHlth,3,1325,1624,0.19429804438026224,True,1:Negative|2:Negative|3:Negative
+BMI,3,925,1046,0.16697161428795693,True,1:Negative|2:Negative|3:Negative
+HighBP,3,1849,1991,0.14264256765083907,True,1:Negative|2:Negative|3:Negative
+HvyAlcoholConsump,3,272,1304,0.1419537361347644,True,1:Positive|2:Positive|3:Positive
+Age,3,1329,1510,0.13463170880233058,False,1:Negative|2:Positive|3:Positive
+HighChol,3,1849,1991,0.12182311107662434,True,1:Negative|2:Negative|3:Negative
+HeartDiseaseorAttack,3,431,1397,0.08519677375993469,True,1:Negative|2:Negative|3:Negative
+DiffWalk,2,2,6,0.05623277850619335,True,1:Negative|3:Negative
+Income,3,44,162,0.054892093489671244,True,1:Negative|2:Negative|3:Negative
+Sex,3,21,96,0.05013666672976718,False,1:Positive|2:Positive|3:Negative

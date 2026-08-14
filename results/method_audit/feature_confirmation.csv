@@ -1,0 +1,5 @@
+Feature,Selected_By_LIME,Confirmed_By_DiCE,DiCE_Changed_CF_Rows,DiCE_Unique_FN_Cases_With_Change,DiCE_Case_Coverage_Percentage_AllFN
+GenHlth,True,True,6291,3667,64.35591435591435
+HighBP,True,True,2551,1949,34.20498420498421
+HighChol,True,True,2325,1759,30.870480870480872
+BMI,True,True,16163,5662,99.36819936819937

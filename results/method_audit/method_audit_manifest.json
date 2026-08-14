@@ -1,0 +1,22 @@
+{
+  "artifact_id": "lice_method_audit",
+  "scope": "training-side OOF false-negative explanations and counterfactuals",
+  "source_files": "released case-level audit artifacts",
+  "interpretation_boundary": "model-behavior and explanation-quality audit; not clinical recommendation",
+  "case_level_outputs": {
+    "explanation_quality": "predictions/method_audit/explanation_quality_case_level.csv.gz",
+    "generation_status": "predictions/method_audit/counterfactual_generation_status.csv.gz",
+    "counterfactuals": "predictions/method_audit/counterfactuals_wide.csv.gz",
+    "feature_changes": "predictions/method_audit/counterfactual_feature_changes_long.csv.gz"
+    ,"fn_lime_explanations": "predictions/method_audit/fn_lime_explanations_long.csv.gz"
+  },
+  "summary_outputs": {
+    "explanation_quality": "results/method_audit/explanation_quality_summary.csv",
+    "fold_quality": "results/method_audit/explanation_quality_by_fold.csv",
+    "feature_constraints": "results/method_audit/feature_constraint_audit.csv",
+    "weight_identity": "results/method_audit/sample_weight_identity_check.csv",
+    "feature_confirmation": "results/method_audit/feature_confirmation.csv"
+    ,"lime_feature_stability_by_fold": "results/method_audit/lime_feature_stability_by_fold.csv"
+    ,"lime_feature_stability_summary": "results/method_audit/lime_feature_stability_summary.csv"
+  }
+}

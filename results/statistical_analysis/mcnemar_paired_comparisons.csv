@@ -1,0 +1,15 @@
+Scope,Comparison,Both_Correct,Baseline_Correct_Candidate_Wrong,Baseline_Wrong_Candidate_Correct,Both_Wrong,Discordant_Total,Exact_Two_Sided_P_Value,Holm_Adjusted_P_Value_Within_Scope,Significant_After_Holm_0.05
+Full test set,M1-Interactions vs Baseline,10269,170,192,3181,362,0.26968419339975247,1.0,False
+Full test set,M2-Mild vs Baseline,10285,154,144,3229,298,0.602193238576533,1.0,False
+Full test set,M2-Balanced vs Baseline,10251,188,194,3179,382,0.7981285251985656,1.0,False
+Full test set,M2-High vs Baseline,10198,241,218,3155,459,0.3044761732006412,1.0,False
+Full test set,M3-Mild vs Baseline,10226,213,228,3145,441,0.5050300565573826,1.0,False
+Full test set,M3-Balanced vs Baseline,10194,245,263,3110,508,0.45072953278011985,1.0,False
+Full test set,M3-High vs Baseline,10125,314,304,3069,618,0.7173590846399789,1.0,False
+Actual positive cases only,M1-Interactions vs Baseline,5594,78,102,1315,180,0.08618731332869531,0.08618731332869531,False
+Actual positive cases only,M2-Mild vs Baseline,5641,31,122,1295,153,5.761122611124854e-14,1.728336783337456e-13,True
+Actual positive cases only,M2-Balanced vs Baseline,5648,24,176,1241,200,9.237398300715988e-30,4.618699150357994e-29,True
+Actual positive cases only,M2-High vs Baseline,5648,24,201,1216,225,5.385320876270137e-36,3.769724613389096e-35,True
+Actual positive cases only,M3-Mild vs Baseline,5616,56,161,1256,217,5.809775520769514e-13,1.1619551041539028e-12,True
+Actual positive cases only,M3-Balanced vs Baseline,5632,40,212,1205,252,1.7986477458692335e-29,7.194590983476934e-29,True
+Actual positive cases only,M3-High vs Baseline,5620,52,248,1169,300,9.05281924934586e-32,5.431691549607516e-31,True

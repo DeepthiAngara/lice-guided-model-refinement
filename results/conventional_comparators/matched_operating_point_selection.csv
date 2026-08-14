@@ -1,0 +1,5 @@
+Comparator,Target_Configuration,Target_Metric,Target_OOF_Value,Selected_Baseline_Threshold,Achieved_Baseline_OOF_Value,Absolute_OOF_Matching_Error,Selection_Data
+BaselineThreshold-MatchRecall-M3-Balanced,M3-Balanced,Recall,0.8183733219080263,0.4738461670861472,0.8183019137389317,7.140816909456671e-05,baseline and candidate training-side OOF predictions
+BaselineThreshold-MatchFPR-M3-Balanced,M3-Balanced,FPR,0.3312773066049859,0.4724066783650296,0.3312405918419797,3.671476300620702e-05,baseline and candidate training-side OOF predictions
+BaselineThreshold-MatchRecall-M3-High,M3-High,Recall,0.8246929448728935,0.4668049900815604,0.8246572407883462,3.5704084547227843e-05,baseline and candidate training-side OOF predictions
+BaselineThreshold-MatchFPR-M3-High,M3-High,FPR,0.3382531115761648,0.4634061976280289,0.3382531115761648,0.0,baseline and candidate training-side OOF predictions

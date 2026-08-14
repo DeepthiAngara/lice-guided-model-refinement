@@ -1,0 +1,24 @@
+                                                     Check                         Observed                         Expected Status
+Generation-status coverage of baseline OOF false negatives                                0                                0   PASS
+                        One generation-status row per case                                0                                0   PASS
+                       Quality rows equal successful cases                                0                                0   PASS
+                        Generated counterfactual row count                            16987                            16987   PASS
+                               Feature-change matrix width                            67948                            67948   PASS
+                    Counterfactual desired-class agreement                                0                                0   PASS
+                      Prespecified LIME-guided feature set [GenHlth, HighBP, HighChol, BMI] [GenHlth, HighBP, HighChol, BMI]   PASS
+              Feature-change rows use only guided features [BMI, GenHlth, HighBP, HighChol] [BMI, GenHlth, HighBP, HighChol]   PASS
+                                     FN LIME case coverage                                0                                0   PASS
+                                     FN LIME fold coverage                        [1, 2, 3]                        [1, 2, 3]   PASS
+                        LIME Fidelity summary reproduction                              0.0                           <=5e-7   PASS
+             DiCE Stability (Jaccard) summary reproduction                              0.0                           <=5e-7   PASS
+                       Fold 1 quality-summary reproduction                              0.0                          <=1e-12   PASS
+                       Fold 2 quality-summary reproduction                              0.0                          <=1e-12   PASS
+                       Fold 3 quality-summary reproduction                              0.0                          <=1e-12   PASS
+                                 GenHlth constraint counts                        (0, 0, 0)                        (0, 0, 0)   PASS
+                                  HighBP constraint counts                        (0, 0, 0)                        (0, 0, 0)   PASS
+                                HighChol constraint counts                        (0, 0, 0)                        (0, 0, 0)   PASS
+                                     BMI constraint counts                      (0, 71, 71)                      (0, 71, 71)   PASS
+                       Sample-weight identity confirmation               [True, True, True]               [True, True, True]   PASS
+                  LIME-selected features confirmed by DiCE                                4                                4   PASS
+             Fold-wise LIME feature-frequency reproduction                                0                                0   PASS
+VERIFICATION_SUMMARY {"checks": 22, "passed": 22, "failed": 0}

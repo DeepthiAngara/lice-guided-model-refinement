@@ -1,0 +1,142 @@
+{
+  "random_seed": 42,
+  "oof_folds": 3,
+  "decision_threshold": 0.5,
+  "model_parameters": {
+    "ccp_alpha": 0.0,
+    "criterion": "friedman_mse",
+    "init": null,
+    "learning_rate": 0.1,
+    "loss": "log_loss",
+    "max_depth": 5,
+    "max_features": null,
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 100,
+    "n_iter_no_change": null,
+    "random_state": 42,
+    "subsample": 1.0,
+    "tol": 0.0001,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "lime_configuration": {
+    "mode": "classification",
+    "discretize_continuous": true,
+    "discretizer": "quartile",
+    "distance_metric": "euclidean",
+    "kernel_width": 3.43693177121688,
+    "num_features": 5,
+    "num_samples": 5000,
+    "seed_rule": "42 + Train_Position",
+    "explained_cases": "OOF false negatives only"
+  },
+  "dice_configuration": {
+    "method": "random",
+    "total_CFs": 3,
+    "desired_class": 1,
+    "features_to_vary": [
+      "GenHlth",
+      "HighBP",
+      "HighChol",
+      "BMI"
+    ],
+    "continuous_features": [
+      "BMI",
+      "MentHlth",
+      "PhysHlth"
+    ],
+    "seed_rule": "42 + Train_Position",
+    "feature_confirmation_threshold": 0.3,
+    "feature_confirmation_unit": "percentage of all OOF false-negative cases with at least one change in the feature",
+    "case_combination_threshold": 0.5,
+    "minimum_changed_features_per_case": 2
+  },
+  "feature_definitions": {
+    "HighBP": "Health-usable",
+    "HighChol": "Health-usable",
+    "CholCheck": "Health-usable",
+    "BMI": "Health-usable",
+    "Smoker": "Health-usable",
+    "Stroke": "Caution",
+    "HeartDiseaseorAttack": "Caution",
+    "PhysActivity": "Health-usable",
+    "Fruits": "Health-usable",
+    "Veggies": "Health-usable",
+    "HvyAlcoholConsump": "Health-usable",
+    "AnyHealthcare": "Other-excluded",
+    "NoDocbcCost": "Other-excluded",
+    "GenHlth": "Health-usable",
+    "MentHlth": "Health-usable",
+    "PhysHlth": "Health-usable",
+    "DiffWalk": "Health-usable",
+    "Sex": "Immutable",
+    "Age": "Immutable",
+    "Education": "Policy-excluded",
+    "Income": "Policy-excluded"
+  },
+  "pattern_rules": [
+    "GenHlth <= 2",
+    "HighBP <= 0",
+    "HighChol <= 0",
+    "BMI <= 25"
+  ],
+  "interaction_definitions": {
+    "HighBP_HighChol": [
+      "HighBP",
+      "HighChol"
+    ],
+    "HighBP_GenHlth": [
+      "HighBP",
+      "GenHlth"
+    ],
+    "HighChol_GenHlth": [
+      "HighChol",
+      "GenHlth"
+    ],
+    "BMI_GenHlth": [
+      "BMI",
+      "GenHlth"
+    ]
+  },
+  "ablation_configurations": {
+    "Baseline": {
+      "interactions": false,
+      "weights": null
+    },
+    "M1-Interactions": {
+      "interactions": true,
+      "weights": null
+    },
+    "M2-Mild": {
+      "interactions": false,
+      "weights": "Mild"
+    },
+    "M2-Balanced": {
+      "interactions": false,
+      "weights": "Balanced"
+    },
+    "M2-High": {
+      "interactions": false,
+      "weights": "High"
+    },
+    "M3-Mild": {
+      "interactions": true,
+      "weights": "Mild"
+    },
+    "M3-Balanced": {
+      "interactions": true,
+      "weights": "Balanced"
+    },
+    "M3-High": {
+      "interactions": true,
+      "weights": "High"
+    }
+  },
+  "released_weight_sha256": "812aa92982d1c1264efd82b821eb9e7baf9d35e900517cc674ad83e504d5d607",
+  "regenerated_weight_file": "results/lice_sample_weights_regenerated.csv.gz"
+}
