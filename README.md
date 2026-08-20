@@ -26,12 +26,12 @@ The repository contents correspond to the public v1.3.0 release and are frozen a
 | `notebooks/` | Ordered modelling, explanation, evaluation, and comparator workflows |
 | `scripts/` | OOF, comparator, statistical, calibration, and prevalence-analysis programs |
 | `predictions/oof/` | Baseline and eight-configuration OOF predictions and audits |
-| `predictions/test/` | Eight-configuration untouched-test predictions |
+| `predictions/test/` | Eight-configuration held-out-test predictions |
 | `predictions/conventional_comparators/` | Conventional-control predictions |
 | `predictions/recent_comparators/` | Pang MARS and Jose LightGBM OOF/test predictions |
 | `predictions/method_audit/` | Case-level LIME, explanation-quality, and counterfactual audit records |
 | `results/oof/` | Pooled and fold-wise OOF performance |
-| `results/test_ablation/` | Eight-configuration untouched-test results |
+| `results/test_ablation/` | Criterion-specific results for the eight predefined configurations on the held-out test partition |
 | `results/conventional_comparators/` | Global weighting, random targeting, and threshold controls |
 | `results/recent_comparators/` | Same-split Pang/Jose search, performance, and paired inference |
 | `results/method_audit/` | Fold-level quality, feature-constraint, feature-confirmation, and weight-identity audits |
