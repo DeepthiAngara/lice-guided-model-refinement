@@ -3,12 +3,12 @@
 ## Evaluation design
 
 - The prepared BRFSS 2015 dataset contains duplicate-removed records.
-- Fixed training and untouched-test assignments are supplied with the release.
+- Fixed training and held-out-test assignments are supplied with the release.
 - Fixed out-of-fold assignments are supplied for the training partition.
-- OOF results provide training-side consistency evidence. They do not represent
-  a fully nested model-selection analysis.
-- The untouched test set is evaluated without sample weighting and is not used
-  to select model parameters or decision thresholds.
+- The held-out test partition was not used for model fitting, LICE-pattern derivation, sample-weight-rule derivation, or decision-threshold selection.
+- Test results are interpreted as criterion-specific comparisons of predefined configurations, not as an unbiased procedure for selecting a universally optimal model.
+- Training-side OOF analyses provide complementary consistency evidence; however, the LICE patterns and sample-weight rules were derived globally from the training-side OOF false-negative pool and reused across the configuration-level OOF folds. Consequently, the configuration assessment is not fully nested.
+- The held-out test partition is evaluated without sample weighting.
 
 ## LICE-guided refinement
 
