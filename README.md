@@ -1,28 +1,20 @@
 # LICE-Guided Model Refinement — v1.3.0
 
-This repository provides the data, code, prediction-level outputs, and
-verification resources for the LICE-guided diabetes-model refinement workflow.
-It includes the fixed train–test split, out-of-fold analyses, untouched-test
-evaluation, conventional controls, and same-split implementations of the Pang
-MARS and Jose LightGBM approaches.
+This repository provides the data, code, prediction-level outputs, and verification resources for the LICE-guided diabetes-model refinement workflow. It includes the fixed train–test split, training-side out-of-fold analyses, criterion-specific comparisons of predefined configurations on the held-out test partition, conventional controls, and same-split implementations of the Pang MARS and Jose LightGBM approaches.
 
-The repository is frozen for the public `v1.3.0` release after all numerical
-and inventory checks pass.
+The repository contents correspond to the public v1.3.0 release and are frozen after all numerical and inventory checks pass.
 
 ## Study boundary
 
 - Prepared dataset: duplicate-removed BRFSS 2015 balanced-source records.
-- Fixed training and untouched-test assignments are provided in `splits/`.
-- Model-refinement assessment: predefined GBDT configurations evaluated at the
-  prespecified decision threshold.
-- OOF assessment: fixed training folds used as training-side consistency
-  evidence, not as a nested model-selection analysis.
-- The untouched test set is used only for final evaluation; it is not used to
-  rank configurations or select a final model.
+- Fixed training and held-out-test assignments are provided in `splits/`.
+- Model-refinement assessment: eight predefined GBDT configurations compared at the prespecified decision threshold.
+- The held-out test partition was not used for model fitting, LICE-pattern derivation, sample-weight-rule derivation, or decision-threshold selection.
+- Test results are interpreted as criterion-specific comparisons of predefined configurations, not as an unbiased procedure for selecting a universally optimal model.
+- Training-side OOF analyses provide complementary consistency evidence; however, the LICE patterns and sample-weight rules were derived globally from the training-side OOF false-negative pool and reused across the configuration-level OOF folds. Consequently, the evaluation is not fully nested.
 - Recent same-split comparators: Pang MARS and Jose LightGBM.
 - No new dataset is introduced.
-- Prevalence outputs are hypothetical scenarios, not population-cohort
-  validation.
+- Prevalence outputs are hypothetical scenarios, not population-cohort validation.
 - Utility outputs are exploratory and do not define clinical thresholds.
 
 ## Repository structure
